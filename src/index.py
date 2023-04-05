@@ -81,8 +81,8 @@ while True:
         if (esta_na_hora(hora, minuto, agora) or esta_na_hora(hora2, minuto2, agora)):
             browser.find_element(
                 By.XPATH, '//*[@id="root"]/div/div[2]/div[1]/div[2]/button').click()
-            print('esperando...')
-            time.sleep(1800)
+        print('esperando...')
+        time.sleep(1800)
     else:
         print('sincronizando...')
         time.sleep(60 - agora.second)
